@@ -15,7 +15,7 @@ async function searchMovie(imdbID){
   <div class="inner two"></div>
   <div class="inner three"></div>
 </div>`
-    const response = await fetch(`http://www.omdbapi.com/?apikey=d213a1ff&i=${imdbID}&plot=full`);
+    const response = await fetch(`https://www.omdbapi.com/?apikey=d213a1ff&i=${imdbID}&plot=full`);
     const data = await response.json();
     console.log(data);
     if(data.Response === "True"){
