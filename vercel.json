@@ -1,5 +1,8 @@
 {
-    "rewrites":[
-        {"source":"/(.*)","destination":"/"}
-    ]
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/movie_search.html"
+    }
+  ]
 }
