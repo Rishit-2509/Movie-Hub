@@ -14,7 +14,7 @@ movieForm.addEventListener("submit",(e)=>{
 
 async function searchMovies(movie){
     moviehub.innerHTML = `<div class="loader"></div> `
-    const response = await fetch(`http://www.omdbapi.com/?apikey=d213a1ff&s=${movie}`);
+    const response = await fetch(`https://www.omdbapi.com/?apikey=d213a1ff&s=${movie}`);
     const data = await response.json();
     console.log(data);
     if(data.Response === "True"){
